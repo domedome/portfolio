@@ -1,8 +1,8 @@
-# MonsieurPress
-Hello, I'm MonsieurPress, a super cool, lightweight & simple WordPress starter theme for developpers
+# domcat
+Hello, I'm domcat, a super cool, lightweight & simple WordPress starter theme for developpers
 
 ## How am I ?
-Hello developer ! I'm a WordPress starter theme, I'm not all naked and actualy the webpage you are in is me ! I'm very minimal & easy to understand, I use modern workflow like gulp, sass, and love. I'm not meant for being used as a parent theme, just adopt me and hack me ! [Check my website](http://www.monsieurpress.com/ "MonsieurPress") to see how I look without modification.
+Hello developer ! I'm a WordPress starter theme, I'm not all naked and actualy the webpage you are in is me ! I'm very minimal & easy to understand, I use modern workflow like gulp, sass, and love. I'm not meant for being used as a parent theme, just adopt me and hack me ! [Check my website](http://www.domcat.com/ "domcat") to see how I look without modification.
 
 ## Requirements
 - A working WordPress installation
@@ -10,9 +10,9 @@ Hello developer ! I'm a WordPress starter theme, I'm not all naked and actualy t
 
 ## How to use me ?
 Go to your wordpress theme folder with your terminal, and type the following commands :
+Yo, be sure you are using the version 6 on node as there's a bunch of stuff not working with the latest.
+than type this:
 
-	$ git clone https://github.com/dadipaq/monsieurpress.git [yourthemename]
-    $ cd [yourthemename]
 	$ npm install
 	$ gulp
 
@@ -26,3 +26,4 @@ I have some embeded gulp tasks that can be use for you workflow :
 - `gulp minify` : Minify the style.css file, do this before production
 - `gulp images` : Compress images located in the images folder
 - `gulp compress` : Minify the javascript
+# portfolio
