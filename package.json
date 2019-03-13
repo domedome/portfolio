@@ -1,16 +1,16 @@
 {
-  "name": "MonsieurPress",
+  "name": "project-y",
   "version": "1.0.0",
-  "description": "MonsieurPress, a minimal & lightweight WordPress starter theme",
-  "author": "David MANSON",
+  "description": "project-y, a minimal & lightweight WordPress starter theme",
+  "author": "Domenico Catelli",
   "license": "WTFPL",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dadipaq/monsieurpress"
+    "url": "https://github.com/domedome/portfolio"
   },
   "devDependencies": {
-    "bourbon": "^4.2.7",
-    "bourbon-neat": "^1.7.4",
+    "bourbon": "^4.3.4",
+    "bourbon-neat": "^2.1.0",
     "eyeglass": "^0.8.3",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
@@ -20,10 +20,13 @@
     "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.1",
+    "gulp-sass": "^2.3.2",
     "gulp-sort": "^2.0.0",
     "gulp-uglify": "^1.5.1",
     "gulp-wp-pot": "^1.2.2",
     "imagemin-pngquant": "^4.2.0"
+  },
+  "dependencies": {
+    "rellax": "^1.7.2"
   }
 }

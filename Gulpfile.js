@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var cssnano = require('gulp-cssnano');
@@ -12,6 +14,12 @@ var sort = require('gulp-sort');
 var duration = require('gulp-duration')
 var plumber = require('gulp-plumber');
 var eyeglass = require("eyeglass");
+var rellax = require("rellax");
+
+// New Sass compiler
+var bourbon 	= require('bourbon').includePaths;
+var neat		= require('bourbon-neat').includePaths;
+
 
 
 /*-------------------------------------------
@@ -21,7 +29,7 @@ var eyeglass = require("eyeglass");
  * - Reload browser (if live reload installed)
  -------------------------------------------*/
 gulp.task('styles', function() {
-    gulp.src('scss/**/*.scss')
+    gulp.src('assets/scss/**/*.scss')
         .pipe(plumber())
         .pipe(sass(eyeglass()))
         .pipe(autoprefixer())
@@ -49,7 +57,7 @@ gulp.task('minify', function () {
  * - Launch the task before production
  -------------------------------------------*/
 gulp.task('images', function() {
-    gulp.src('images/*')
+    gulp.src('assets/images/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
@@ -65,7 +73,7 @@ gulp.task('images', function() {
  * - Launch the task before production
  -------------------------------------------*/
 gulp.task('compress', function() {
-    gulp.src('javascript/src/*.js')
+    gulp.src('assets/javascript/src/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('javascript/dist/'));
 });
@@ -80,9 +88,9 @@ gulp.task('pot', function () {
     return gulp.src('./**/*.php')
         .pipe(sort())
         .pipe(wpPot( {
-            domain: 'monsieurpress',
-            destFile:'monsieurpress.pot',
-            package: 'monsieurpress',
+            domain: 'project-y',
+            destFile:'project-y.pot',
+            package: 'project-y',
             lastTranslator: 'John Doe <mail@example.com>',
             team: 'Team Team <mail@example.com>'
         } ))
@@ -97,6 +105,6 @@ gulp.task('pot', function () {
  -------------------------------------------*/
 gulp.task('default',function() {
     livereload.listen();
-    gulp.watch('scss/**/*.scss',['styles']);
-    gulp.watch('javascript/src/*.js',['compress']);
+    gulp.watch('assets/scss/**/*.scss',['styles']);
+    gulp.watch('assets/javascript/src/*.js',['compress']);
 });

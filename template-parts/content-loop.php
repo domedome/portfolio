@@ -13,7 +13,7 @@
 	<header class="entry-header">
 		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
         <aside class="entry-meta">
-            <?php _e('Posted', 'monsieurpress'); ?> <?php the_date(); ?> <?php _e('by', 'monsieurpress'); ?> <?php the_author(); ?>
+            <?php _e('Posted', 'project-y'); ?> <?php the_date(); ?> <?php _e('by', 'project-y'); ?> <?php the_author(); ?>
         </aside>
 	</header>
 

@@ -2,6 +2,7 @@
 
 <div class="l-container">
     <main role="main" class="l-col-8 l-pad-2" id="posts">
+      <h1>Index and Blog archive</h1>
 
         <!-- The content -->
         <?php

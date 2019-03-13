@@ -16,12 +16,11 @@
 
     <div id="site-container" class="site-container">
         <header id="site-header" class="l-header header">
-            <div class="l-container">
-                <div class="l-col-12">
+                <div class="nav-elements">
 
                     <!-- logo -->
                     <a class="site-logo" href="<?php echo home_url(); ?>" rel="nofollow">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="Logo"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" class="logo-glitch" alt="Logo"/>
                     </a>
 
                     <!-- mobile button menu -->
@@ -33,12 +32,11 @@
                     <nav class="site-nav">
                         <?php wp_nav_menu(array(
                             'container' => false,
-                            'theme_location' => 'main-nav',
+                            'theme_location' => 'main-nav-right',
                         )); ?>
                     </nav>
 
                 </div>
 
-            </div>
         </header>
         <div class="site-content">
