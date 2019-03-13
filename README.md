@@ -1,12 +1,10 @@
 # project-y
-Hello, I'm project-y, a super cool, lightweight & simple WordPress starter theme for developpers
+Theme based on a lightweight starter theme formerly know as "Monseieurpresse" by David Manson (Just google that for more information)
 
 ## Requirements
 - A working WordPress installation
 - Npm (packaged in node)
 
-
-# Read this:
 
 ## How to use me ?
 Go to your wordpress theme folder with your terminal, and type the following commands :
